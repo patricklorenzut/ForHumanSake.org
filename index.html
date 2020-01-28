@@ -4,11 +4,11 @@ title: "Mental Health for Software Developers"
 slug: home
 ---
 
-<header class="hero is-success is-fullheight is-warning">
+<header class="hero is-fullheight is-warning">
     <div class="hero-body">
       <div class="container">
         <h3>Let’s Talk About</h3>
-        <h1>Mental Health for Software Developers</h1>
+        <h1>Mental Health for <span id="changer">Software Developers</span></h1>
         <h2>Lonely, pressured, and often overwhelmed... let‘s learn to love ourselves - and each other - before it’s too late.</h2>
 
         <div class="button-group">
@@ -18,3 +18,18 @@ slug: home
       </div>
     </div>
 </header>
+
+<script>    
+  var words = ["Online Entrepreneurs", "Remote Workers", "Freelancers", "Software Developers"];
+  var i = 0;
+  var text = "This text changes";
+  function _getChangedText() {
+    i = (i + 1) % words.length;
+    return text.replace(/This text changes/, words[i]);
+  }
+  function _changeText() {
+    var txt = _getChangedText();
+    var d = document.getElementById("changer")
+    document.getElementById("changer").innerHTML = txt;
+  }
+  setInterval("_changeText()", 2000);</script>
