@@ -1,0 +1,64 @@
+---
+---
+@font-face { font-family: 'Glacial Indifference'; src: url("/assets/fonts/glacialindifference-regular-webfont.woff2") format("woff2"), url("/assets/fonts/glacialindifference-regular-webfont.woff") format("woff"); font-weight: normal; font-display: swap; font-style: normal; }
+@font-face { font-family: 'Glacial Indifference'; src: url("/assets/fonts/glacialindifference-italic-webfont.woff2") format("woff2"), url("/assets/fonts/glacialindifference-italic-webfont.woff") format("woff"); font-weight: normal; font-display: swap; font-style: italic; }
+@font-face { font-family: 'Glacial Indifference'; src: url("/assets/fonts/glacialindifference-bold-webfont.woff2") format("woff2"), url("/assets/fonts/glacialindifference-bold-webfont.woff") format("woff"); font-weight: bold; font-display: swap; font-style: normal; }
+
+//Colors
+$light-blue: #A2B6B5;
+$light-yellow: #FFFDDE;
+$dark-yellow: #FDF7A4;
+$pink: #EA158C;
+$black: #333;
+$dark-blue: #0a2545;
+$darker-blue: #0a1a2d;
+
+@import 'bulma/bulma';
+
+body{
+    font-size: 16px;
+	@media screen and (min-width: 768px){
+		font-size: 17px;
+	}
+	@media screen and (min-width: 960px){
+		font-size: 18px;
+	}
+	@media screen and (min-width: 1200px){
+		font-size: 19px;
+	}
+	@media screen and (min-width: 1440px){
+		font-size: 20px;
+	}
+}
+
+@import '_article';
+@import "_navigation";
+@import "_home";
+@import "_transformation";
+
+.button-group{
+    .button:not(:last-child){
+        margin-right: 1em;
+    }
+}
+
+.button{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    border-width: 2px;
+    &.is-medium{
+        font-size: 0.9em;
+        padding: 1.5em 2.25em;
+        border-radius: 50px;
+    }
+    
+    &.is-empty{
+        background: transparent;
+        border-color: $dark;
+        &:hover{
+            background: $dark;
+            color: white;
+        }
+    }
+}
