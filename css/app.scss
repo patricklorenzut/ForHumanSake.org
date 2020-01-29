@@ -65,21 +65,3 @@ body{
         }
     }
 }
-
-#we-are{    
-    .hero-body{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-}
-@media screen and (min-height: 768px) and (min-width: 768px){
-    #we-are{
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    #together-we-are{
-        margin-top: -3em;
-    }
-}
