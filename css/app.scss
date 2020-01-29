@@ -37,8 +37,11 @@ body{
 @import "_transformation";
 
 .button-group{
-    .button:not(:last-child){
-        margin-right: 1em;
+    .button:not(:last-child){        
+        margin-bottom: 1em;
+        @media screen and (min-width: 420px){
+            margin-right: 1em;
+        }
     }
 }
 
