@@ -24,6 +24,8 @@ $blue: hsl(217, 71%, 53%) !default;
 $purple: hsl(271, 100%, 71%) !default;
 $red: $orange !default;
 
+$yellow-light: lighten($yellow, 15%);
+
 // Typography
 
 $family-sans-serif: 'Glacial Indifference', sans-serif !default;

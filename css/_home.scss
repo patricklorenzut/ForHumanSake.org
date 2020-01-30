@@ -3,7 +3,7 @@ header.hero{
     text-align: center;
     //min-height: 90vh!important;
     &.is-warning{
-        background: rgba($yellow, 0.75)!important;
+        background: $yellow-light!important;
     }
     h3{
         margin-bottom: 3rem;
@@ -60,6 +60,12 @@ body.what{
                 background: $yellow;
             }
         }
+    }
+}
+
+body.home{
+    footer{
+        background: $yellow-light;
     }
 }
 
