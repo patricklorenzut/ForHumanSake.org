@@ -10,7 +10,21 @@
 	
 	<body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
 		<div class="wrapper">
-			{{ content }}									
+			<div class="hero is-medium">
+				<div class="hero-body">
+					<div class="container">
+						<div class="has-text-centered" id="logo">
+							<a href="/"><img src="/assets/images/logo.png" alt="For Human Sake logo" width="60"></a>
+						</div>
+						<div class="columns is-centered">							
+							<div class="column is-6 content">
+								{{ content }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>				
 	</body>
 	
