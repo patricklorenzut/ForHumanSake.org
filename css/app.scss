@@ -62,3 +62,15 @@ body{
         }
     }
 }
+
+
+#cookieNotice{
+    font-size: 16px!important;
+    line-height: 1.3em!important;
+    padding: 1em!important;
+    .confirm{
+        background: $danger!important;
+        padding: 0.5em 1.5em!important;
+        margin: -0.5em 1em!important;
+    }
+}
