@@ -1,7 +1,7 @@
 # Site settings
 title: For Human Sake
-tagline: Mental Health for Software Developers and Online Workers
-url: "https://teameverybody.org" # The base hostname & protocol for your site. Use it if you need absolute URL's
+tagline: Mental Health for Tech Workers
+url: "https://forhumansake.org" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Social
 socialimg: /images/og.png
